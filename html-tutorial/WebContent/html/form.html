@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="EUC-KR">
+		<title>Insert title here</title>
+	</head>
+	<body>
+
+		<h1>HTML 폼요소 &lt;form&gt;</h1>
+		<div>
+			<!-- index페이지로 이동 -->
+			<a href = "./index.html">목록</a>
+		</div>
+		
+		<h3>1. html forms</h3>
+		<p>html에서 서버에 데이터를 보내기 위해서 &lt;form&gt;태그를 사용한다.</p>
+		<p>&lt;form&gt;태그는  text, checkbox,radio,submit, button등과 같은 &lt;input&gt;요소를 포함하고, select, text area, fieldset, legend, label 태그들도 포함한다.</p>
+		
+		<ol>
+			<li>&lt;form&gt;<</li>
+			<li>...</li>
+			<li>input elements</li>
+			<li>...</li>
+			<li>&lt;/form&lt;</li>
+		</ol>
+		<br><br>
+		
+		<h3>2. input 태그</h3>
+		<br>
+		<p>text fields</p>
+		
+		<ol>
+			<li>&lt;form&gt;</li>
+			<li>First name: &lt;input type= "text" name= "firtstname"&gt;&lt;br&gt;</li>
+			<li>Last name: &lt;input type= "text" name="lastname"&gt;</li>
+			<li>&lt;/form&gt;</li>
+		</ol>
+		<br>
+		
+		<form>
+		First name: <input type= "text" name= "first name"><br>
+		Last name: <input type= "text" name= "Last name">
+		</form>
+		
+		<h3>password field</h3>
+		<ol>
+			<li>&lt;form&gt;</li>
+			<li>Password: &lt;input type= "password" name= "pwd"&gt;
+			<li>&lt;/form&gt;</li>
+		</ol>
+		<br>
+		
+		<form>
+		Password: <input= "password" name= "pwd">
+		</form>
+		<br>
+		
+		<h3>radio buttons</h3>
+		<br>
+		<ol>
+			<li>&lt;form&gt;</li>
+			<li>&lt;input type= "radio" name= "sex" value= "male"&gt;Male&lt;br;&gt;
+			<li>&lt;inpuut ype= "radio" name= "sex" value= "female"&gt;Female</li>
+			<li>&lt;/form&gt;</li>
+		</ol>
+		<br>
+		
+		<form>
+		<input type= "radio" name= "sex" value= "Male">Male<br>
+		<input type= "radio" name= "sex" value= "Female">Female
+		</form>
+		<br>
+		
+		<h3>checkboxes</h3>
+		<br>
+		
+		<ol>
+			<li>&lt;form&gt;</li>
+			<li>&lt;input type= "checkbox" name= "vehicle" value= "Bike"&gt;I have a bike&lt;br&gt;</li>
+			<li>&lt;input type= "checkbox" name= "vehicle" value= "Car"&gt;I have a car</li>
+			<li>&lt;form&gt;</li>
+		</ol>
+		<br>
+		
+		<form>
+		<input type="checkbox" name="vehicle" value="Bike">I have a bike<br>
+		<input type="checkbox" name="vehicle" value="Car">I have a car
+		</form>
+		<br>
+		
+		<h3>submit button</h3>
+		<br>
+		
+		<ol>
+			<li>&lt;form name="input" action="html_form_action.asp" method="get"&gt;</li>
+			<li>Username: &lt;input type="text" name="user"&gt;</li>
+			<li>&lt;input type="submit" value="Submit"&gt;</li>
+			<li>&lt;/form&gt;</li>
+		</ol>
+		<br>
+		
+		<form name="input" action="html_form_action.asp" method="get">
+		Username: <input type="text" name="user">
+		<input type="submit" value="Submit">
+		</form>
+		
+		<h3>simple drop-down list</h3>
+		<br>
+		
+		<ol>
+			<li>&lt;form action=""&gt;</li>
+			<li>&lt;select name="cars"&gt;</li>
+			<li>&lt;option value="volvo"&gt;Volvo&lt;/option&gt;</li>
+			<li>&lt;option value="saab"&gt;Saab&lt;/option&gt;</li>
+			<li>&lt;option value="fiat"&gt;Fiat&lt;/option&gt;</li>
+			<li>&lt;option value="audi"&gt;Audi&lt;/option&gt;</li>
+			<li>&lt;/select&gt;</li>
+			<li>&lt;/form&gt;</li>
+		</ol>
+		<br>
+		
+		<form action="">
+		<select name="cars">
+		<option value="volvo">Volvo</option>
+		<option value="saab">Saab</option>
+		<option value="fiat">Fiat</option>
+		<option value="audi">Audi</option>
+		</select>
+		</form>
+		
+		<h3>textarea</h3>
+		<br>
+		
+		<ol>
+			<li>&lt;textarea rows="10" cols="30"&gt;</li>
+			<li>The cat was playing in the garden.</li>
+			<li>&lt;/textarea&gt;</li>
+		</ol>
+		<br>
+		
+		<textarea rows="10" cols="30">
+		The cat was playing in the garden.
+		</textarea>
+		<br>
+		
+		<h3>&lt;fieldset&gt;과 &lt;legend&gt;태그</h3>
+		<br>
+		
+		<ol>
+			<li>&lt;!DOCTYPE HTML&gt;</li>
+			<li>&lt;html&gt;</li>
+			<li>&nbsp;&nbsp;&nbsp;&nbsp;&lt;form&gt;</li>
+			<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;fieldset&gt;&lt;!--폼양식--&gt;</li>
+			<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;legend&gt;폼양식 제목(설명)&lt;/legend&gt;</li>
+			<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;</li>
+			<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="userName"&gt;이름:&lt;/label&gt;</li>
+			<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" id="userName"&gt;</li>
+			<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;</li>
+			<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/fieldset&gt;</li>
+			<li>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/form&gt;</li>
+			<li>&lt;/html&gt;</li>
+		</ol>
+		<br>
+		
+		<p>결과화면(구글 브라우즈에서 테스트)</p>
+		<br>
+		
+		<form>
+		     <fieldset><!--폼양식-->
+		         <legend>폼양식 제목(설명)</legend>
+		         <div>
+		             <label for="userName">이름:</label>
+		             <input type="text" id="userName">
+		         </div>
+		     </fieldset>
+		 </form>
+		
+		
+	</body>
+</html>
