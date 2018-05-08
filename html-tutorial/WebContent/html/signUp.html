@@ -11,7 +11,7 @@
 		</div>
 		<br>
 
-<form>
+<form action= "../jsp/signUp.jsp" method= "post">
 	<fieldset id="loginInfo">
 		<legend>
 			01 로그인 정보
@@ -106,9 +106,9 @@
 					<img src="../signUp/User_birth.gif">
 				</td>
 				<td colspan="2">
-					<input type="text" id="brithday1" name="brithday1" size="6" maxlength="4"> 년
-					<input type="text" id="brithday2" name="brithday2" size="6" maxlength="2"> 월
-					<input type="text" id="brithday3" name="brithday3" size="6" maxlength="2"> 일 
+					<input type="text" id="birthday1" name="birthday1" size="6" maxlength="4"> 년
+					<input type="text" id="birthday2" name="birthday2" size="6" maxlength="2"> 월
+					<input type="text" id="birthday3" name="birthday3" size="6" maxlength="2"> 일 
 				</td>
 				<td>
 					<input type="radio" name="mtype" id="mtype" value="solar">양력
@@ -146,8 +146,8 @@
 					<input type="tel" id="phone3" name="phone3" size="6" maxlength="4">
 				</td>
 				<td>
-					<input type="radio" name="telplace" id="telplace" value="office">자택
-					<input type="radio" name="telplace" id="telplace" value="home">직장
+					<input type="radio" name="telplace" id="telplace" value="home">자택
+					<input type="radio" name="telplace" id="telplace" value="office">직장
 				</td>
 			</tr>
 			<tr>
@@ -182,13 +182,13 @@
 					<img src="../signUp/User_addr.gif">
 				</td>
 				<td colspan="2">
-					<input type="text" id="zipcode1" name="zipcode2" size="6" maxlength="3"> -
-					<input type="text" id="zipcode2" name="zipcode3" size="6" maxlength="3">&nbsp;
+					<input type="text" id="zipcode1" name="zipcode1" size="6" maxlength="3"> -
+					<input type="text" id="zipcode2" name="zipcode2" size="6" maxlength="3">&nbsp;
 					<input type="button" value="우편번호찾기" class="white"> 
 				</td>
 				<td>
-					<input type="radio" name="addrplace" id="addrplace" value="office">자택
-					<input type="radio" name="addrplace" id="addrlace" value="home">직장
+					<input type="radio" name="addrplace" id="addrplace" value="home">자택
+					<input type="radio" name="addrplace" id="addrplace" value="office">직장
 				</td>
 			</tr>
 			<tr>
@@ -251,8 +251,8 @@
 					<input type="text" id="company" name="company" size="20">&nbsp;<input type="button" value="찾기" class="white">
 				</td>
 				<td>
-					<input type="radio" name="companyname" id="companyname" value="office">자택
-					<input type="radio" name="companyname" id="companyname" value="home">직장
+					<input type="radio" name="companyname" id="companyname" value="home">자택
+					<input type="radio" name="companyname" id="companyname" value="office">직장
 				</td>
 			</tr>
 			<tr>
@@ -342,7 +342,7 @@
 	</fieldset>
 	<br>
 	<fieldset id="lastfield">
-		<input type="button" value="가입" class="orange">
+		<input type="submit" value="가입" class="orange">
 		<input type="button" value="취소" class="orange">
 	</fieldset>
 </form>
