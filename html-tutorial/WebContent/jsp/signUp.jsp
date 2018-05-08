@@ -24,7 +24,6 @@
 		String email = request.getParameter("email");
 		String zipcode1 = request.getParameter("zipcode1");
 		String zipcode2 = request.getParameter("zipcode2");
-		String addrplace = request.getParameter("addrplace");
 		String addr1 = request.getParameter("addr1");
 		String addr2 = request.getParameter("addr2");
 		String company = request.getParameter("company");
@@ -32,6 +31,7 @@
 		String partname = request.getParameter("partname");
 		String compostion = request.getParameter("compostion");
 		String homepage = request.getParameter("homepage");
+		String self = request.getParameter("self");
 		%>
 		
 		<h1>회원가입</h1>
@@ -680,21 +680,297 @@
 					</td>
 					<td  colspan="2">
 						<select name="job" id="job">
-							<option value="" selected="selected">===선택하세요===</option>
-							<option value="job1">회사원</option>
-							<option value="job2">연구전문직</option>
-							<option value="job3">교수</option>
-							<option value="job4">학생</option>
-							<option value="job5">일반자영업</option>
-							<option value="job6">공무원</option>
-							<option value="job7">의료인</option>
-							<option value="job8">법조인</option>
-							<option value="job9">종교.언론/예술인</option>
-							<option value="job10">농.축.수산/광공업인</option>
-							<option value="job11">단체</option>
-							<option value="job12">주부</option>
-							<option value="job13">무직</option>
-							<option value="job14">기타</option>
+							<%
+								String job = request.getParameter("job");
+							%>
+	
+				            <%
+				            	if (job.equals("job1")) {
+				            %>
+								<option value="">===선택하세요===</option>
+								<option value="job1" selected="selected">회사원</option>
+								<option value="job2">연구전문직</option>
+								<option value="job3">교수</option>
+								<option value="job4">학생</option>
+								<option value="job5">일반자영업</option>
+								<option value="job6">공무원</option>
+								<option value="job7">의료인</option>
+								<option value="job8">법조인</option>
+								<option value="job9">종교.언론/예술인</option>
+								<option value="job10">농.축.수산/광공업인</option>
+								<option value="job11">단체</option>
+								<option value="job12">주부</option>
+								<option value="job13">무직</option>
+								<option value="job14">기타</option>
+								
+							<%
+			                    } else if (job.equals("job2")) {
+			                %>
+			                	<option value="">===선택하세요===</option>
+								<option value="job1">회사원</option>
+								<option value="job2" selected="selected">연구전문직</option>
+								<option value="job3">교수</option>
+								<option value="job4">학생</option>
+								<option value="job5">일반자영업</option>
+								<option value="job6">공무원</option>
+								<option value="job7">의료인</option>
+								<option value="job8">법조인</option>
+								<option value="job9">종교.언론/예술인</option>
+								<option value="job10">농.축.수산/광공업인</option>
+								<option value="job11">단체</option>
+								<option value="job12">주부</option>
+								<option value="job13">무직</option>
+								<option value="job14">기타</option>
+			                
+			                <%
+			                    } else if (job.equals("job3")) {
+			                %>
+			                	<option value="">===선택하세요===</option>
+								<option value="job1">회사원</option>
+								<option value="job2">연구전문직</option>
+								<option value="job3" selected="selected">교수</option>
+								<option value="job4">학생</option>
+								<option value="job5">일반자영업</option>
+								<option value="job6">공무원</option>
+								<option value="job7">의료인</option>
+								<option value="job8">법조인</option>
+								<option value="job9">종교.언론/예술인</option>
+								<option value="job10">농.축.수산/광공업인</option>
+								<option value="job11">단체</option>
+								<option value="job12">주부</option>
+								<option value="job13">무직</option>
+								<option value="job14">기타</option>
+								
+							<%
+			                    } else if (job.equals("job4")) {
+			                %>
+			                	<option value="">===선택하세요===</option>
+								<option value="job1">회사원</option>
+								<option value="job2">연구전문직</option>
+								<option value="job3">교수</option>
+								<option value="job4" selected="selected">학생</option>
+								<option value="job5">일반자영업</option>
+								<option value="job6">공무원</option>
+								<option value="job7">의료인</option>
+								<option value="job8">법조인</option>
+								<option value="job9">종교.언론/예술인</option>
+								<option value="job10">농.축.수산/광공업인</option>
+								<option value="job11">단체</option>
+								<option value="job12">주부</option>
+								<option value="job13">무직</option>
+								<option value="job14">기타</option>
+								
+							<%
+			                    } else if (job.equals("job5")) {
+			                %>
+			                	<option value="">===선택하세요===</option>
+								<option value="job1">회사원</option>
+								<option value="job2">연구전문직</option>
+								<option value="job3">교수</option>
+								<option value="job4">학생</option>
+								<option value="job5" selected="selected">일반자영업</option>
+								<option value="job6">공무원</option>
+								<option value="job7">의료인</option>
+								<option value="job8">법조인</option>
+								<option value="job9">종교.언론/예술인</option>
+								<option value="job10">농.축.수산/광공업인</option>
+								<option value="job11">단체</option>
+								<option value="job12">주부</option>
+								<option value="job13">무직</option>
+								<option value="job14">기타</option>
+								
+							<%
+			                    } else if (job.equals("job6")) {
+			                %>
+			                	<option value="">===선택하세요===</option>
+								<option value="job1">회사원</option>
+								<option value="job2">연구전문직</option>
+								<option value="job3">교수</option>
+								<option value="job4">학생</option>
+								<option value="job5">일반자영업</option>
+								<option value="job6" selected="selected">공무원</option>
+								<option value="job7">의료인</option>
+								<option value="job8">법조인</option>
+								<option value="job9">종교.언론/예술인</option>
+								<option value="job10">농.축.수산/광공업인</option>
+								<option value="job11">단체</option>
+								<option value="job12">주부</option>
+								<option value="job13">무직</option>
+								<option value="job14">기타</option>
+								
+							<%
+			                    } else if (job.equals("job7")) {
+			                %>
+			                	<option value="">===선택하세요===</option>
+								<option value="job1">회사원</option>
+								<option value="job2">연구전문직</option>
+								<option value="job3">교수</option>
+								<option value="job4">학생</option>
+								<option value="job5">일반자영업</option>
+								<option value="job6">공무원</option>
+								<option value="job7" selected="selected">의료인</option>
+								<option value="job8">법조인</option>
+								<option value="job9">종교.언론/예술인</option>
+								<option value="job10">농.축.수산/광공업인</option>
+								<option value="job11">단체</option>
+								<option value="job12">주부</option>
+								<option value="job13">무직</option>
+								<option value="job14">기타</option>
+								
+							<%
+			                    } else if (job.equals("job8")) {
+			                %>
+			                	<option value="">===선택하세요===</option>
+								<option value="job1">회사원</option>
+								<option value="job2">연구전문직</option>
+								<option value="job3">교수</option>
+								<option value="job4">학생</option>
+								<option value="job5">일반자영업</option>
+								<option value="job6">공무원</option>
+								<option value="job7">의료인</option>
+								<option value="job8" selected="selected">법조인</option>
+								<option value="job9">종교.언론/예술인</option>
+								<option value="job10">농.축.수산/광공업인</option>
+								<option value="job11">단체</option>
+								<option value="job12">주부</option>
+								<option value="job13">무직</option>
+								<option value="job14">기타</option>
+								
+							<%
+			                    } else if (job.equals("job9")) {
+			                %>
+			                	<option value="">===선택하세요===</option>
+								<option value="job1">회사원</option>
+								<option value="job2">연구전문직</option>
+								<option value="job3">교수</option>
+								<option value="job4">학생</option>
+								<option value="job5">일반자영업</option>
+								<option value="job6">공무원</option>
+								<option value="job7">의료인</option>
+								<option value="job8">법조인</option>
+								<option value="job9" selected="selected">종교.언론/예술인</option>
+								<option value="job10">농.축.수산/광공업인</option>
+								<option value="job11">단체</option>
+								<option value="job12">주부</option>
+								<option value="job13">무직</option>
+								<option value="job14">기타</option>
+								
+							<%
+			                    } else if (job.equals("job10")) {
+			                %>
+			                	<option value="">===선택하세요===</option>
+								<option value="job1">회사원</option>
+								<option value="job2">연구전문직</option>
+								<option value="job3">교수</option>
+								<option value="job4">학생</option>
+								<option value="job5">일반자영업</option>
+								<option value="job6">공무원</option>
+								<option value="job7">의료인</option>
+								<option value="job8">법조인</option>
+								<option value="job9">종교.언론/예술인</option>
+								<option value="job10" selected="selected">농.축.수산/광공업인</option>
+								<option value="job11">단체</option>
+								<option value="job12">주부</option>
+								<option value="job13">무직</option>
+								<option value="job14">기타</option>
+								
+							<%
+			                    } else if (job.equals("job11")) {
+			                %>
+			                	<option value="">===선택하세요===</option>
+								<option value="job1">회사원</option>
+								<option value="job2">연구전문직</option>
+								<option value="job3">교수</option>
+								<option value="job4">학생</option>
+								<option value="job5">일반자영업</option>
+								<option value="job6">공무원</option>
+								<option value="job7">의료인</option>
+								<option value="job8">법조인</option>
+								<option value="job9">종교.언론/예술인</option>
+								<option value="job10">농.축.수산/광공업인</option>
+								<option value="job11" selected="selected">단체</option>
+								<option value="job12">주부</option>
+								<option value="job13">무직</option>
+								<option value="job14">기타</option>
+								
+							<%
+			                    } else if (job.equals("job12")) {
+			                %>
+			                	<option value="">===선택하세요===</option>
+								<option value="job1">회사원</option>
+								<option value="job2">연구전문직</option>
+								<option value="job3">교수</option>
+								<option value="job4">학생</option>
+								<option value="job5">일반자영업</option>
+								<option value="job6">공무원</option>
+								<option value="job7">의료인</option>
+								<option value="job8">법조인</option>
+								<option value="job9">종교.언론/예술인</option>
+								<option value="job10">농.축.수산/광공업인</option>
+								<option value="job11">단체</option>
+								<option value="job12" selected="selected">주부</option>
+								<option value="job13">무직</option>
+								<option value="job14">기타</option>
+								
+							<%
+			                    } else if (job.equals("job13")) {
+			                %>
+			                	<option value="">===선택하세요===</option>
+								<option value="job1">회사원</option>
+								<option value="job2">연구전문직</option>
+								<option value="job3">교수</option>
+								<option value="job4">학생</option>
+								<option value="job5">일반자영업</option>
+								<option value="job6">공무원</option>
+								<option value="job7">의료인</option>
+								<option value="job8">법조인</option>
+								<option value="job9">종교.언론/예술인</option>
+								<option value="job10">농.축.수산/광공업인</option>
+								<option value="job11">단체</option>
+								<option value="job12">주부</option>
+								<option value="job13" selected="selected">무직</option>
+								<option value="job14">기타</option>
+								
+							<%
+			                    } else if (job.equals("job14")) {
+			                %>
+			                	<option value="">===선택하세요===</option>
+								<option value="job1">회사원</option>
+								<option value="job2">연구전문직</option>
+								<option value="job3">교수</option>
+								<option value="job4">학생</option>
+								<option value="job5">일반자영업</option>
+								<option value="job6">공무원</option>
+								<option value="job7">의료인</option>
+								<option value="job8">법조인</option>
+								<option value="job9">종교.언론/예술인</option>
+								<option value="job10">농.축.수산/광공업인</option>
+								<option value="job11">단체</option>
+								<option value="job12">주부</option>
+								<option value="job13">무직</option>
+								<option value="job14" selected="selected">기타</option>
+								
+							<%
+			                    } else {
+			                %>
+			                	<option value="" selected="selected">===선택하세요===</option>
+								<option value="job1">회사원</option>
+								<option value="job2">연구전문직</option>
+								<option value="job3">교수</option>
+								<option value="job4">학생</option>
+								<option value="job5">일반자영업</option>
+								<option value="job6">공무원</option>
+								<option value="job7">의료인</option>
+								<option value="job8">법조인</option>
+								<option value="job9">종교.언론/예술인</option>
+								<option value="job10">농.축.수산/광공업인</option>
+								<option value="job11">단체</option>
+								<option value="job12">주부</option>
+								<option value="job13">무직</option>
+								<option value="job14">기타</option>
+							<%
+			                    }
+							%>	
 						</select>
 					</td>
 				</tr>
@@ -727,14 +1003,14 @@
 							<input type="radio" name="companyname" id="companyname" value="office">직장
 						
 						<%
-						} else {
+							} else {
 						%>
 						
 							<input type="radio" name="companyname" id="companyname" value="home">자택
 							<input type="radio" name="companyname" id="companyname" value="office">직장
 						
 						<%
-						}
+							}
 						%>
 					</td>
 				</tr>
@@ -776,14 +1052,110 @@
 					</td>
 					<td colspan="2">
 						<select name="interest" id="interest">
-							<option value="" selected="selected">===선택하세요===</option>
-	        				<option value="inter1">벤처창업</option>
-							<option value="inter2">business동향</option>
-							<option value="inter3">정부정책동향</option>
-							<option value="inter4">자금지원</option>
-							<option value="inter5">신기술소식</option>
-							<option value="inter6">취업/고용</option>
-							<option value="inter7">기타</option>
+							<%
+								String interest = request.getParameter("interest");
+							%>
+	 
+				            <%
+				            	if (interest.equals("inter1")) {
+				            %>
+								<option value="">===선택하세요===</option>
+		        				<option value="inter1" selected="selected">벤처창업</option>
+								<option value="inter2">business동향</option>
+								<option value="inter3">정부정책동향</option>
+								<option value="inter4">자금지원</option>
+								<option value="inter5">신기술소식</option>
+								<option value="inter6">취업/고용</option>
+								<option value="inter7">기타</option>
+								
+							<%
+				            	} else if (interest.equals("inter2")) {
+				            %>
+				            	<option value="">===선택하세요===</option>
+		        				<option value="inter1">벤처창업</option>
+								<option value="inter2" selected="selected">business동향</option>
+								<option value="inter3">정부정책동향</option>
+								<option value="inter4">자금지원</option>
+								<option value="inter5">신기술소식</option>
+								<option value="inter6">취업/고용</option>
+								<option value="inter7">기타</option>
+				            
+				            <%
+				            	} else if (interest.equals("inter3")) {
+				            %>
+				            	<option value="">===선택하세요===</option>
+		        				<option value="inter1">벤처창업</option>
+								<option value="inter2">business동향</option>
+								<option value="inter3" selected="selected">정부정책동향</option>
+								<option value="inter4">자금지원</option>
+								<option value="inter5">신기술소식</option>
+								<option value="inter6">취업/고용</option>
+								<option value="inter7">기타</option>
+				            
+				            <%
+				            	} else if (interest.equals("inter4")) {
+				            %>
+				            	<option value="">===선택하세요===</option>
+		        				<option value="inter1">벤처창업</option>
+								<option value="inter2">business동향</option>
+								<option value="inter3">정부정책동향</option>
+								<option value="inter4" selected="selected">자금지원</option>
+								<option value="inter5">신기술소식</option>
+								<option value="inter6">취업/고용</option>
+								<option value="inter7">기타</option>
+				            
+				            <%
+				            	} else if (interest.equals("inter5")) {
+				            %>
+				            	<option value="">===선택하세요===</option>
+		        				<option value="inter1">벤처창업</option>
+								<option value="inter2">business동향</option>
+								<option value="inter3">정부정책동향</option>
+								<option value="inter4">자금지원</option>
+								<option value="inter5" selected="selected">신기술소식</option>
+								<option value="inter6">취업/고용</option>
+								<option value="inter7">기타</option>
+				            
+				            <%
+				            	} else if (interest.equals("inter6")) {
+				            %>
+				            	<option value="">===선택하세요===</option>
+		        				<option value="inter1">벤처창업</option>
+								<option value="inter2">business동향</option>
+								<option value="inter3">정부정책동향</option>
+								<option value="inter4">자금지원</option>
+								<option value="inter5">신기술소식</option>
+								<option value="inter6" selected="selected">취업/고용</option>
+								<option value="inter7">기타</option>
+				            
+				            <%
+				            	} else if (interest.equals("inter7")) {
+				            %>
+				            	<option value="">===선택하세요===</option>
+		        				<option value="inter1">벤처창업</option>
+								<option value="inter2">business동향</option>
+								<option value="inter3">정부정책동향</option>
+								<option value="inter4">자금지원</option>
+								<option value="inter5">신기술소식</option>
+								<option value="inter6">취업/고용</option>
+								<option value="inter7" selected="selected">기타</option>
+				            
+				            <%
+				            	} else {
+				            %>
+				            	<option value="" selected="selected">===선택하세요===</option>
+		        				<option value="inter1">벤처창업</option>
+								<option value="inter2">business동향</option>
+								<option value="inter3">정부정책동향</option>
+								<option value="inter4">자금지원</option>
+								<option value="inter5">신기술소식</option>
+								<option value="inter6">취업/고용</option>
+								<option value="inter7">기타</option>
+				            
+				            <%
+				            	}
+				            %>
+				            
 						</select>
 					</td>
 				</tr>
@@ -794,8 +1166,30 @@
 						<img src="../signUp/TP_Recieve.gif">
 					</td>
 					<td>
-						<input type="radio" name="webzine" id="webzine" value="true">수신동의
-						<input type="radio" name="webzine" id="webzine" value="false">수신하지않음
+						<%
+							String webzine = request.getParameter("webzine")==null?"":request.getParameter("webzine");
+						%>
+						
+						<%																	
+							if (webzine.equals("true")) {
+						%>
+							<input type="radio" name="webzine" id="webzine" value="true" checked= "checked">수신동의
+							<input type="radio" name="webzine" id="webzine" value="false">수신하지않음
+						
+						<%
+							} else if (webzine.equals("false")) {
+						%>
+							<input type="radio" name="webzine" id="webzine" value="true">수신동의
+							<input type="radio" name="webzine" id="webzine" value="false" checked= "checked">수신하지않음
+						<%
+							} else {
+						%>
+							<input type="radio" name="webzine" id="webzine" value="true">수신동의
+							<input type="radio" name="webzine" id="webzine" value="false">수신하지않음
+						
+						<%
+							}
+						%>
 					</td>
 					<td>
 						(TP에서 제공하는 Webzine 서비스를 받아보시겠습니까?)
@@ -818,7 +1212,7 @@
 						<img src="../signUp/User_intro.gif">
 					</td>
 					<td colspan="2">
-						<textarea name="self" id="self"></textarea>
+						<textarea name="self" id="self"><%= self%></textarea>
 					</td>
 				</tr>
 			</table>
